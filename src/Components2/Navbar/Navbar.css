@@ -1,0 +1,169 @@
+/* Import Montserrat font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-icon {
+  height: 30px;
+}
+
+.navbar-aks {
+  /* position: fixed;
+  top: 0; */
+  z-index: 10;
+}
+
+.navbar-aks .social-icons-topbar {
+  width: 100vw;
+  padding-right: 3rem;
+}
+
+.social-icons-topbar {
+  /* background-color: #042d3000; */
+  background-color: #07565c;
+  padding: 10px 0;
+  /* background-color: #07565c10; */
+}
+
+.social-icons-topbar a {
+  font-size: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  /* background-color: #07565c00; */
+  background-color: white;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed; */
+  width: 100%;
+  /* z-index: 1000; */
+}
+
+.nav-items li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul {
+  margin-bottom: 0px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-items li a {
+  color: #07565c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.nav-items li a:hover {
+  opacity: 0.8;
+}
+
+/* Burger icon (always visible) */
+.burger {
+  font-size: 1.8rem;
+  background: none;
+  border: 3px solid #9fb03a;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #9fb03a;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: -270px;
+  height: 100%;
+  width: 260px;
+  background-color: #07565c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 1100;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar .close-btn {
+  align-self: flex-end;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  opacity: 0.8;
+}
+
+/* Overlay behind sidebar */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1050;
+}
+
+
+@media (max-width: 800px) {
+  .hide-nav-item a {
+    display: none !important;
+  }
+
+
+}
+
+
+@media (max-width: 500px) {
+    .logo-icon {
+    height: 25px;
+}
+
+
+.nav-items {
+    display: flex;
+  list-style: none;
+    gap: 0rem;
+}
+}

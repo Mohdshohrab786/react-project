@@ -1,0 +1,49 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", */
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* 
+Theme Colors
+#07565c; turqoise
+#0093a1; sky blue
+#9fb03a; Sky Green
+} 
+*/
+
+/*
+Navbar brand/title (e.g. logo)	24–28px	Bold	Prominent but not overwhelming
+Navbar items	16–18px	Medium	Should align visually with site style
+Dropdown items	15–16px	Normal	Slightly smaller than nav items
+Hero heading (e.g. carousel h1)	40–56px	Bold/Extra Bold	Big and attention-grabbing
+Hero paragraph/subtext	18–20px	Normal	Should be easy to read on first glance
+Section headings (e.g. About Us)	28–36px	Bold	Use consistent margins above/below
+Paragraph text (body, testimonials)	16–18px	Normal	Base font size should match accessibility standards
+Testimonial name/title	18px	Medium/Bold	Slight emphasis for identity
+Testimonial quote/message	16px	Normal	Base body font size
+
+
+*/

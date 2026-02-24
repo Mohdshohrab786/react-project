@@ -1,0 +1,27 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* full screen, adjust if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 102, 204, 0.3); /* blue overlay with opacity */
+}
+
+.content.background-img-content h2 {
+  position: relative;
+  z-index: 10000;
+  color: white;
+  text-align: center;
+  padding-top: 25vh; /* vertical centering */
+  font-size: 2rem !important;
+}

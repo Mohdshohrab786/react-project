@@ -1,0 +1,137 @@
+/* src/components/HeroSection.css */
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+.hero {
+  
+  background-image: url("../../imgs/hero-img-new2.png");
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 1;
+  padding: 30px 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  /* z-index: 2; */
+}
+
+.glass-box img {
+  width: 320px;
+  height: 320px !important;
+  border-radius: 5px;
+}
+
+.glass-box {
+  /* margin-top: -50px; */
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 1100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-box h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.glass-box p {
+  /* margin-top: 20px; */
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.glass-box p.signature {
+  font-family: "Sacramento", cursive;
+  font-size: 30px !important;
+  margin-top: 20px;
+}
+
+.glass-box span {
+  margin-top: -40px;
+}
+
+@media (max-width: 1200px) {
+  .glass-box {
+    width:1000px;
+  }
+
+  .glass-box img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .glass-box {
+    margin: 0 40px;
+  }
+
+  .glass-box .container {
+    width: 1000px !important;
+  }
+  .glass-box img {
+    display: none;
+  }
+
+  .glass-box .col-img-glass {
+    display: none;
+  }
+  .col-text-glass {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .glass-box {
+    width: 500px;
+    margin: 0 30px;
+  }
+
+  .container {
+    width: 500px;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .glass-box {
+    width: 450px;
+    margin: 0 30px;
+  }
+
+  .container {
+    width: 450px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .glass-box {
+    width: 400px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .glass-box {
+    width: 350px; 
+  }
+}

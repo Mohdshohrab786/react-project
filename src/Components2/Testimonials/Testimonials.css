@@ -1,0 +1,91 @@
+.logo-slider-wrapper {
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Custom arrows */
+
+
+/* Logo card */
+
+.logo-slider-wrapper.client-logo-slider-wrapper {
+  margin-top: 0px !important;
+}
+
+.logo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-slider-wrapper.client-logo-slider-wrapper .logo-card img {
+  max-width: 150px;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  transition: 0.3s;
+  margin-top: -40px;
+}
+
+.logo-card img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Wrapper */
+.logo-slider-wrapper {
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Small custom arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(7, 86, 92, 0.9);
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  user-select: none;
+  width: 28px;        /* make arrow circle smaller */
+  height: 28px;
+}
+
+/* Make the icons smaller */
+.custom-arrow svg {
+  font-size: 13px !important;  
+}
+
+.custom-arrow.prev {
+  left: -18px;
+}
+
+.custom-arrow.next {
+  right: -18px;
+}
+
+.custom-arrow:hover {
+  background-color: #07565c;
+}
+
+/* SMALL DOTS */
+.swiper-pagination-bullet {
+  background: #07565c !important;
+  opacity: 0.4;
+  width: 6px !important;      
+  height: 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #07565c !important;
+  opacity: 1;
+  transform: scale(1.1);     
+}

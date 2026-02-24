@@ -1,0 +1,80 @@
+/* Remove padding & border-radius from columns */
+.col-about-1,
+.col-about-2,
+.col-about-3 {
+  color: white;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+/* Gradient backgrounds inspired by Juris site */
+.col-about-1 {
+  background: linear-gradient(135deg, #074f50 0%, #0093a1 100%);
+}
+
+.col-about-2 {
+  background: linear-gradient(135deg, #00687a 0%, #48c5d5 100%);
+}
+
+.col-about-3 {
+  background: linear-gradient(135deg, #8da12f 0%, #c0d238 100%);
+}
+
+/* Hover effect: slightly lighten */
+.col-about-1:hover {
+  background: linear-gradient(135deg, #0a6666 0%, #33bbc0 100%);
+}
+
+.col-about-2:hover {
+  background: linear-gradient(135deg, #0091a6 0%, #5bd3e0 100%);
+}
+
+.col-about-3:hover {
+  background: linear-gradient(135deg, #a5bf46 0%, #d7e35a 100%);
+}
+
+/* SectionContainer override */
+.col-about-1 .section-container,
+.col-about-2 .section-container,
+.col-about-3 .section-container {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 30px; /* internal padding for text */
+}
+
+/* Headings */
+.col-about-1 h3,
+.col-about-2 h3,
+.col-about-3 h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+}
+
+/* Paragraphs */
+.col-about-1 p,
+.col-about-2 p,
+.col-about-3 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #e0f0f2cc;
+}
+
+/* Learn More links */
+.learn-link {
+  color: #cce7e9;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.learn-link:hover {
+  color: white;
+  text-decoration: underline;
+}

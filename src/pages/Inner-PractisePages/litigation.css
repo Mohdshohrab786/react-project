@@ -1,0 +1,143 @@
+.services-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 15px auto;
+  
+}
+
+.services-sidebar {
+  width: 25%;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.services-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-sidebar li {
+  margin-bottom: 12px;
+}
+
+.services-sidebar a {
+  text-decoration: none;
+  color: #07565c;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 14.5px;
+}
+
+.services-sidebar a:hover {
+  color: #9fb03a;
+}
+
+.services-sidebar .active a {
+  color: #fff;
+  background: #9fb03a;
+  padding: 8px 8px;
+  border-radius: 6px;
+  display: block;
+}
+
+.services-content {
+  width: 70%;
+  padding: 20px;
+  border-left: 2px solid #eee;
+}
+
+.services-content h2 {
+  color: #07565c;
+  margin-bottom: 15px;
+}
+
+.services-content p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.accordion-container {
+  /* max-width: 900px;
+  margin: 40px auto;
+  padding: 20px; */
+}
+
+.accordion-heading {
+  /* text-align: center; */
+  font-size: 1.2rem;
+  /* margin-top: 30px; */
+  margin-bottom: 10px !important;
+  color: #9fb03a !important;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  width: 100%;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #07565c;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.accordion-title:hover {
+  background: #eaf5f6;
+}
+
+.accordion-title.active {
+  background: #9fb03a;
+  color: #fff;
+}
+
+.accordion-icon {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.accordion-content.show {
+  max-height: 500px;
+  padding: 15px;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 876px) {
+  .services-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .services-sidebar {
+    width: 100%;
+  }
+
+  .services-content {
+    width: 100%;
+   }
+
+   .services-content h2 {
+    display: none;
+   }
+}

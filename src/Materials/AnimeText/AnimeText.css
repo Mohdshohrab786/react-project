@@ -1,0 +1,61 @@
+.aks-hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70vh; */
+  /* background-color: #f7f7f7; */
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.aks-hero-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* ↓ Reduced gap between AKS and PARTNERS */
+}
+
+.aks-left {
+  font-size: 46px; /* ↓ Smaller font for AKS */
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+}
+
+.aks-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.partners-text {
+  font-size: 26px; /* ↓ Smaller font for PARTNERS */
+  font-weight: 600;
+  display: flex;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.letter-wrapper {
+  overflow: hidden;
+  display: inline-block;
+  width: auto;
+  line-height: 1;
+}
+
+.letter {
+  display: inline-block;
+  white-space: pre;
+}
+
+.subtext {
+  margin-top: 3px;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.subtext span {
+  margin: 0 4px;
+  color: #aaa;
+}

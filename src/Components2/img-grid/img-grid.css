@@ -1,0 +1,60 @@
+/* src/components/ImageGrid.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.aks-image-grid {
+  display: flex;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.left-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-grid {
+  flex: 1;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.left-grid .grid-item {
+  height: 180px;
+}
+
+.right-grid .tall {
+  height: 370px;
+}
+
+@media (max-width: 768px) {
+  .aks-image-grid {
+    flex-direction: column;
+  }
+
+  .left-grid,
+  .right-grid {
+    width: 100%;
+  }
+
+  .left-grid .grid-item,
+  .right-grid .tall {
+    height: 200px;
+  }
+}

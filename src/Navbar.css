@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* font-family: "Segoe UI", sans-serif; */
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: white;
+  color: #0093a1;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 
+   */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+  z-index: 1000;
+}
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand img {
+  width: 180px;
+  padding-top: 10px;
+}
+
+.hamburger {
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+  z-index: 1100;
+}
+
+.hamburger span {
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #0093a1;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+.hamburger span:nth-child(2) {
+  top: 10px;
+}
+.hamburger span:nth-child(3) {
+  top: 20px;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+nav.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+nav.desktop-nav .dropdown {
+  position: relative;
+}
+
+nav.desktop-nav .dropdown i {
+  font-size: 12px;
+}
+/* nav.desktop-nav .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+        background: white;
+        margin-top: 20px;
+        padding: 0.5rem;
+        display: none;
+        flex-direction: column;
+        min-width: 150px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        margin-top: 0;
+      } */
+
+nav.desktop-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  background: white;
+  margin-top: 20px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+}
+nav.desktop-nav .dropdown-menu a {
+  padding-bottom: 0.6rem;
+}
+
+nav.desktop-nav .dropdown:hover .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(5px); /* This adds the margin below the nav */
+  pointer-events: auto;
+}
+
+nav.desktop-nav a {
+  color: #606b23;
+  text-decoration: none;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sidebar {
+  position: fixed;
+
+  right: -100%;
+
+  top: 74px;
+
+  height: 100%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #606b23;
+  /* padding: 2rem 1rem; */
+  transition: all 0.4s ease;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+.sidebar.open {
+  right: 0;
+}
+.sidebar .nav-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e7e4e4;
+  cursor: pointer;
+}
+.sidebar .back-arrow {
+  color: #07565c;
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e7e4e4;
+  user-select: none;
+}
+.submenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item-drop-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item-drop-side i {
+  font-size: 14.5px;
+}
+.submenu.open {
+  transform: translateX(0%);
+  opacity: 1;
+  pointer-events: all;
+}
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+  nav.desktop-nav {
+    display: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#overlay {
+  position: fixed;
+  top: 74px; /* align with header bottom */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 1150; */
+  display: none;
+}
+#overlay.show {
+  display: block;
+}

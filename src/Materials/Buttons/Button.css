@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.learn-more-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+
+  background: transparent;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.learn-more-btn.blue {
+  color: #07565c;
+}
+
+.learn-more-btn.green {
+  color: #9fb03a;
+}
+
+.learn-more-btn .arrow {
+  margin-right: 30px;
+  margin-top: 5px;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 1;
+  color: white;
+}
+
+.learn-more-btn .text {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.learn-more-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+
+  z-index: 0;
+  transition: width 0.4s ease;
+  border-radius: 50px;
+}
+
+.learn-more-btn.blue::before {
+  background-color: #07565c !important;
+}
+
+.learn-more-btn.green::before {
+  background-color: #9fb03a !important;
+}
+
+.learn-more-btn:hover::before {
+  width: 100%;
+}
+
+.learn-more-btn:hover .arrow {
+  transform: translateX(10px);
+  color: #fff;
+}
+
+.learn-more-btn:hover .text {
+  color: #fff;
+}

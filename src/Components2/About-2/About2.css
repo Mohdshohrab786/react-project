@@ -1,0 +1,53 @@
+.law-section {
+  background-image: url("../../imgs/section-img.png"); /* If in public folder */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  /* max-width: 1200px; */
+  /* width: 100%; */
+}
+
+.glass-block {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-block {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  min-height: 250px;
+}
+
+.image1 {
+  background-image: url("../../imgs/carousel/img-2.jpg");
+}
+
+.image2 {
+  background-image: url("../../imgs/carousel/img-3.jpg");
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.learn-more-btn.about-2-link .text {
+  color: white !important;
+}

@@ -1,0 +1,89 @@
+.side-tabs-container {
+  display: flex;
+  min-height: 70vh;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Tabs list without background */
+.tabs-list {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  border-right: 1px solid #ddd; /* visible vertical divider */
+  /* border-top: 1px solid #ddd; same visibility for top border */
+  background: transparent;
+}
+
+/* Buttons */
+.tab-btn {
+  padding: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #275c6e;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.tab-btn:hover {
+  background: rgba(159, 176, 58, 0.1); /* light green highlight */
+}
+
+.tab-btn.active {
+  color: #9fb03a;
+  font-weight: bold;
+  border-left: 4px solid #9fb03a; 
+  background: rgba(159, 176, 58, 0.08);
+}
+
+/* Tab content */
+.tab-content {
+  flex: 1;
+  padding: 24px;
+  background: white;
+  /* border-top: 1px solid #ddd; matches sidebar border color */
+}
+
+.tab-content h2 {
+  margin-top: 0;
+  color: #275c6e;
+}
+
+.side-tabs-container {
+  margin-top: 40px;
+}
+
+/* Responsive: tabs on top */
+@media (max-width: 768px) {
+  .side-tabs-container {
+    flex-direction: column;
+  }
+  .tabs-list {
+    flex-direction: row;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid rgba(0, 0, 0, 0.05); /* top border for mobile too */
+  }
+  .tab-btn {
+    flex: 1;
+    text-align: center;
+    border-left: none;
+  }
+  .tab-btn.active {
+    border-bottom: 3px solid #9fb03a;
+    background: rgba(159, 176, 58, 0.08);
+  }
+
+  .tab-btn.active {
+    border-left: none;
+   }
+
+   .tab-btn {
+    font-size: 15px;
+   }
+}

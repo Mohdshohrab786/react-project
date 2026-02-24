@@ -1,0 +1,28 @@
+.section-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  color: #333;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.heading-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.underline {
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #0093a1, #9fb03a);
+  border-radius: 3px;
+  margin: 0.6rem auto 0;
+  transition: width 0.3s ease;
+}
+
+.heading-container:hover .underline {
+  width: 140px;
+}

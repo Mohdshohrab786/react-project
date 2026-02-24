@@ -1,0 +1,26 @@
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+
+  border-radius: 2px;
+}
+
+h1.blue::after {
+  background-color: #07565c !important;
+}
+
+h1.green::after {
+  background-color: #9fb03a !important;
+}

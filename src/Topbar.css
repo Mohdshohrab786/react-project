@@ -1,0 +1,32 @@
+/* src/components/Topbar.css */
+.topbar {
+  background: linear-gradient(135deg, #074f50 0%, #0093a1 100%);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.topbar i {
+  margin-right: 5px;
+}
+
+.topbar .address {
+  /* color: #9fb03a;  */
+  color: white;
+}
+
+.topbar .phone,
+.topbar .email {
+  /* color: #0093a1;  */
+  color: white;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 991px) {
+  .topbar {
+    display: none !important;
+  }
+}
