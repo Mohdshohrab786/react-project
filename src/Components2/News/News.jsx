@@ -7,32 +7,37 @@ import "swiper/css/pagination";
 import "./News.css";
 import ImgSection from "../../Materials/img-section/img-sec";
 import Heading from "../../Materials/Heading2/Heading";
-import ImgNews from "../../imgs/carousel/img-1.jpg";
-import Link from "../../Materials/Buttons/Button";
+import ImgNews1 from "../../imgs/carousel/6.png";
+import ImgNews2 from "../../imgs/carousel/Beyond the term sheet.png";
+import ImgNews3 from "../../imgs/carousel/From Idea to Incorporation.png";
+import ImgNews4 from "../../imgs/carousel/Navigating Debt Financing.png";
+import ImgNews5 from "../../imgs/carousel/Remote work policies.png";
 
+import Link from "../../Materials/Buttons/Button";
+ 
 const newsItems = [
   {
-    image: ImgNews,
+    image: ImgNews1,
     title: "Litigation vs. Arbitration: Choosing the Right Path for Your Business Dispute",
-    description: "Facing a major business conflict? Understand the key differences in cost, timeline, privacy, and control between taking a case to court (litigation) and resolving it through private arbitration.",
+    description: "Facing a major business conflict? Understand the key differences in cost, timeline, privacy, and control between taking a case to court (litigation) and resolving it through private arbitration for more efficient dispute resolution.",
   },
   {
-    image: ImgNews,
+    image: ImgNews2,
     title: "Beyond the Term Sheet: Essential Legal Due Diligence for Investors and Founders",
     description: "For PE/VC investors and startups alike, thorough due diligence is critical. We outline the key legal areas—from IP ownership to cap table hygiene—that must be vetted to secure a successful investment.",
   },
   {
-    image: ImgNews,
+    image: ImgNews3,
     title: "From Idea to Incorporation: The 5 Legal Must-Dos for Every New Startup",
     description: "Launching your startup? Don't let legal oversights derail your growth. This guide covers the non-negotiable first steps, from choosing the right business structure to protecting your intellectual property.",
   },
   {
-    image: ImgNews,
+    image: ImgNews4,
     title: "Navigating Debt Financing: Understanding Covenants, Security, and Your Obligations",
     description: " Securing a loan is one thing; understanding the fine print is another. We decode common terms in debt agreements to help borrowers understand their commitments and avoid potential pitfalls.",
   },
   {
-    image: ImgNews,
+    image: ImgNews5,
     title: "Remote Work Policies: A Legal Checklist for Protecting Your Company and Employees",
     description: "The hybrid work model is here to stay. Ensure your remote work policy is legally sound, covering data security, work hours, expense reimbursement, and health and safety obligations."
 }];

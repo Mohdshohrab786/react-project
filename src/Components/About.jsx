@@ -2,7 +2,7 @@ import React from "react";
 import SectionContainer from "../Materials/Section/Section";
 import Container from "../Materials/Container";
 import "./About.css";
-
+ 
 const About = () => {
   return (
     <div className="container-fluid about-section">

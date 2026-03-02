@@ -27,7 +27,7 @@ import Arbitration from "./pages/Inner-PractisePages/arbitration";
 import GeneralCorporateAndCommercial from "./pages/Inner-PractisePages/general-corporate-and-commercial";
 import PrivateEquityAndVentureCapital from "./pages/Inner-PractisePages/private-equity-and-venture-capital";
 import StartUpsConsultancy from "./pages/Inner-PractisePages/start-ups-consultancy";
- import DebtFunding from "./pages/Inner-PractisePages/debt-funding";
+import DebtFunding from "./pages/Inner-PractisePages/debt-funding";
 import ContractManagement from "./pages/Inner-PractisePages/contract-management";
 import LabourAndEmploymentLaws from "./pages/Inner-PractisePages/labour-and-employment-laws";
 import IntellectualPropertyAndCyberLaw from "./pages/Inner-PractisePages/intellectual-property-and-cyber-law";
@@ -37,9 +37,9 @@ import SoftwareAgreementAdvisory from "./pages/Inner-PractisePages/software-agre
 import ITITES from "./pages/Inner-PractisePages/it-ites";
 import MergersAndAcquisitions from "./pages/Inner-PractisePages/mergers-and-acquisitions";
 import SecretarialCompliance from "./pages/Inner-PractisePages/secretarial-compliance";
- import CompetitionPractice from "./pages/Inner-PractisePages/competition-practice";
- import CorporateRegulatoryCompliance from "./pages/Inner-PractisePages/corporate-regulatory-compliance";
- import InfrastructureAndEnergy from "./pages/Inner-PractisePages/infrastructure-and-energy";
+import CompetitionPractice from "./pages/Inner-PractisePages/competition-practice";
+import CorporateRegulatoryCompliance from "./pages/Inner-PractisePages/corporate-regulatory-compliance";
+import InfrastructureAndEnergy from "./pages/Inner-PractisePages/infrastructure-and-energy";
 import CareerPage from "./pages/Careers";
 import TeamDetail1 from "./pages/team-1";
 import TeamDetail2 from "./pages/team-2";
@@ -57,81 +57,161 @@ import Sitemap from "./pages/FooterSiteMap";
 // import Footer1 from "../Components2/footer-1/footer-1";
 
 function App() {
-  // const [agreed, setAgreed] = useState(false);
-
-  
-  // Check localStorage when app loads
+    // const [agreed, setAgreed] = useState(false);
 
 
-  // const handleAgree = () => {
-  //   setAgreed(true);
-  // };
+    // Check localStorage when app loads
 
-   const [agreed, setAgreed] = useState(false);
 
-  const handleAgree = () => {
-    setAgreed(true); // user clicked agree
-  };
+    // const handleAgree = () => {
+    //   setAgreed(true);
+    // };
 
-  return (
-    <>
-     <Router>
-    {/* {!agreed ? (
-        <Disclaimer onAgree={() => setAgreed(true)} />
-      ) : ( */}
+    const [agreed, setAgreed] = useState(false);
 
-        {!agreed && <Disclaimer onAgree={handleAgree} />}
-        <>
-        <Navbar />
-          
-           
-        <Routes>
-         
-          <Route path="/" element={<Home />} />
-          <Route path="/Expertise" element={<Expertise />} />
-          <Route path="/Team" element={<Team />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Careers" element={<Careers />} />
-          <Route path="/About" element={<AboutPage />} />
-          <Route path="/NotableDeals" element={<NotableDeals />} />
-          <Route path="/Awards" element={<AwardsRecog />} />
-           <Route path="/litigation" element={<Litigation />} />
-<Route path="/Clients" element={<Clients/>}/>
-  <Route path="/arbitration" element={<Arbitration />} />
-  <Route path="/general-corporate-and-commercial" element={<GeneralCorporateAndCommercial />} />
-  <Route path="/private-equity-and-venture-capital" element={<PrivateEquityAndVentureCapital />} />
-<Route path="/start-ups-consultancy" element={<StartUpsConsultancy />} />
-   <Route path="/debt-funding" element={<DebtFunding />} />
-<Route path="/contract-management" element={<ContractManagement />} />
-  <Route path="/labour-and-employment-laws" element={<LabourAndEmploymentLaws />} />
- <Route path="/intellectual-property-low-and-cyber-low" element={<IntellectualPropertyAndCyberLaw/>} />
-    <Route path="/projects-and-project-finance" element={<ProjectAndFinance/>} />
-<Route path="/legal-metrology" element={<LegalMetrology />} />
-    <Route path="/software-agreement-related-advisory" element={<SoftwareAgreementAdvisory />} />
-  <Route path="/it-ites" element={<ITITES />} />
-   <Route path="/mergers-and-acquisitions" element={<MergersAndAcquisitions />} />
- <Route path="/secretarial-compliance" element={<SecretarialCompliance />} />
-  <Route path="/competition-practice" element={<CompetitionPractice />} />
-   <Route path="/corporate-regulatory-compliance" element={<CorporateRegulatoryCompliance />} />
-   <Route path="/infrastructure-and-energy" element={<InfrastructureAndEnergy />} />
-        <Route path="/Sonal-Kumar-Singh" element={<TeamDetail1 />} />
-      <Route path="/Faizur-Rehman" element={<TeamDetail2 />} />
-      <Route path="/Ayan-K-De" element={<TeamDetail3 />} />
-      <Route path="/Ratik" element={<TeamDetail4 />} />
-      <Route path="/Sukanya-Lal" element={<TeamDetail5 />} />
-      <Route path="/Suraj-Raj-Kesherwani" element={<TeamDetail6 />} />
-      <Route path="/Ekansh-Gupta" element={<TeamDetail7 />} />
-      <Route path="/Careers" element={<CareerPage/>} />
-        <Route path="/apply/:role" element={<ApplicationForm />} />
-        {/* footer */}
-       <Route path="/sitemap" element={ <Sitemap/>} /> 
+    const handleAgree = () => {
+        setAgreed(true); // user clicked agree
+    };
 
-   </Routes>
-            <Footer /> </>
-      {/* // )} */}
-      </Router>
-    </>
-  );
-}
+    return ( <
+        >
+        <
+        Router > {
+            /* {!agreed ? (
+                    <Disclaimer onAgree={() => setAgreed(true)} />
+                  ) : ( */
+        }
 
-export default App;
+        {
+            !agreed && < Disclaimer onAgree = { handleAgree }
+            />} <
+            >
+            <
+            Navbar / >
+
+
+                <
+                Routes >
+
+                <
+                Route path = "/"
+            element = { < Home / > }
+            /> <
+            Route path = "/Expertise"
+            element = { < Expertise / > }
+            /> <
+            Route path = "/Team"
+            element = { < Team / > }
+            /> <
+            Route path = "/Contact"
+            element = { < Contact / > }
+            /> <
+            Route path = "/Careers"
+            element = { < Careers / > }
+            /> <
+            Route path = "/About"
+            element = { < AboutPage / > }
+            /> <
+            Route path = "/NotableDeals"
+            element = { < NotableDeals / > }
+            /> <
+            Route path = "/Awards"
+            element = { < AwardsRecog / > }
+            /> <
+            Route path = "/litigation"
+            element = { < Litigation / > }
+            /> <
+            Route path = "/Clients"
+            element = { < Clients / > }
+            /> <
+            Route path = "/arbitration"
+            element = { < Arbitration / > }
+            /> <
+            Route path = "/general-corporate-and-commercial"
+            element = { < GeneralCorporateAndCommercial / > }
+            /> <
+            Route path = "/private-equity-and-venture-capital"
+            element = { < PrivateEquityAndVentureCapital / > }
+            /> <
+            Route path = "/start-ups-consultancy"
+            element = { < StartUpsConsultancy / > }
+            /> <
+            Route path = "/debt-funding"
+            element = { < DebtFunding / > }
+            /> <
+            Route path = "/contract-management"
+            element = { < ContractManagement / > }
+            /> <
+            Route path = "/labour-and-employment-laws"
+            element = { < LabourAndEmploymentLaws / > }
+            /> <
+            Route path = "/intellectual-property-low-and-cyber-low"
+            element = { < IntellectualPropertyAndCyberLaw / > }
+            /> <
+            Route path = "/projects-and-project-finance"
+            element = { < ProjectAndFinance / > }
+            /> <
+            Route path = "/legal-metrology"
+            element = { < LegalMetrology / > }
+            /> <
+            Route path = "/software-agreement-related-advisory"
+            element = { < SoftwareAgreementAdvisory / > }
+            /> <
+            Route path = "/it-ites"
+            element = { < ITITES / > }
+            /> <
+            Route path = "/mergers-and-acquisitions"
+            element = { < MergersAndAcquisitions / > }
+            /> <
+            Route path = "/secretarial-compliance"
+            element = { < SecretarialCompliance / > }
+            /> <
+            Route path = "/competition-practice"
+            element = { < CompetitionPractice / > }
+            /> <
+            Route path = "/corporate-regulatory-compliance"
+            element = { < CorporateRegulatoryCompliance / > }
+            /> <
+            Route path = "/infrastructure-and-energy"
+            element = { < InfrastructureAndEnergy / > }
+            /> <
+            Route path = "/Sonal-Kumar-Singh"
+            element = { < TeamDetail1 / > }
+            /> <
+            Route path = "/Faizur-Rehman"
+            element = { < TeamDetail2 / > }
+            /> <
+            Route path = "/Ayan-K-De"
+            element = { < TeamDetail3 / > }
+            /> <
+            Route path = "/Ratik"
+            element = { < TeamDetail4 / > }
+            /> <
+            Route path = "/Sukanya-Lal"
+            element = { < TeamDetail5 / > }
+            /> <
+            Route path = "/Suraj-Raj-Kesherwani"
+            element = { < TeamDetail6 / > }
+            /> <
+            Route path = "/Ekansh-Gupta"
+            element = { < TeamDetail7 / > }
+            /> <
+            Route path = "/Careers"
+            element = { < CareerPage / > }
+            /> <
+            Route path = "/apply/:role"
+            element = { < ApplicationForm / > }
+            /> { /* footer */ } <
+            Route path = "/sitemap"
+            element = { < Sitemap / > }
+            /> 
+
+            <
+            /Routes> <
+            Footer / > < /> { /* // )} */ } <
+                /Router> <
+                />
+        );
+    }
+
+    export default App;

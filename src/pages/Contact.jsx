@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import HeroImg from "../Materials/Hero/HeroImg";
-import Img from "../imgs/heroImgs/contact2.png";
+import Img from "../imgs/heroImgs/contact11.png";
 import "./Contact.css";
 
 const Contact = () => {
@@ -32,7 +32,9 @@ const Contact = () => {
 
   return (
     <>
-      <HeroImg image={Img}> Contact Us</HeroImg>
+          {/* <HeroImg image={Img}> Contact Us</HeroImg> */}
+
+      <HeroImg image={Img}></HeroImg>
       <div className="contact-page">
         <div className="container">
           <div className="contact-container">

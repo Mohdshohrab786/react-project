@@ -17,39 +17,40 @@ const Footer = () => {
               {/* <img src={Logo} width={"220px"} height={"80px"} /> */}
               <AnimeText />
             </div>
-
+ 
             {/* Column 2 */}
             <div className="footer-col">
-              <ul className="footer-nav">
-                <div className="footer-nav-left">
-                  <li>
-                    <a href="#">About The Firm</a>
-                  </li>
-                  <li>
-                    <a href="#">Expertise</a>
-                  </li>
-                  <li>
-                    <a href="#">Our Team</a>
-                  </li>
-                  <li>
-                    <a href="#">Notable Deals</a>
-                  </li>
-                </div>
-                <div className="footer-nav-right">
-                  <li>
-                    <a href="#">Thought Leadership</a>
-                  </li>
-                  <li>
-                    <a href="#">Awards & Rankings</a>
-                  </li>
-                  <li>
-                    <a href="#">Careers</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
-                  </li>
-                </div>
-              </ul>
+<ul className="footer-nav">
+  <div className="footer-nav-left">
+    <li>
+      <Link to="/About">About The Firm</Link>
+    </li>
+    <li>
+      <Link to="/Expertise">Expertise</Link>
+    </li>
+    <li>
+      <Link to="/Team">Our Team</Link>
+    </li>
+    <li>
+      <Link to="/NotableDeals">Notable Deals</Link>
+    </li>
+  </div>
+
+  <div className="footer-nav-right">
+    <li>
+      <Link to="/ThoughtLeadership">Thought Leadership</Link>
+    </li>
+    <li>
+      <Link to="/Awards">Awards & Rankings</Link>
+    </li>
+    <li>
+      <Link to="/Careers">Careers</Link>
+    </li>
+    <li>
+      <Link to="/Contact">Contact Us</Link>
+    </li>
+  </div>
+</ul>
             </div>
 
             {/* Column 3 */}

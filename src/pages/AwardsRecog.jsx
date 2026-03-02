@@ -13,7 +13,7 @@ import award10 from "../imgs/awards/awards/img-10.png";
 import award11 from "../imgs/awards/awards/img-11.png";
 import award12 from "../imgs/awards/awards/img-12.jpg";
 import HeroImg from "../Materials/Hero/HeroImg";
-import Img from "../imgs/heroImgs/awardsHero.jpg";
+import Img from "../imgs/heroImgs/award-and-rankings-page.png";
 
 import "./AwardsPage.css";
 

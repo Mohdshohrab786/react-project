@@ -1,30 +1,41 @@
 import React, { useState } from "react";
 import "./About.css";
 import HeroImg from "../Materials/Hero/HeroImg";
-import Img from "../imgs/heroImgs/About.jpeg";
-import ImageGrid from "../Components2/img-grid/img-grid";
+// import Img from "../imgs/heroImgs/akspartners-office-image.png";
+import Img from "../imgs/heroImgs/akspartners-office-images.png";
 
+import ImageGrid from "../Components2/img-grid/img-grid";
+// Overview Images
+import O1 from "../imgs/carousel/Overview.png";
+import O2 from "../imgs/carousel/Overview3.png";
+import O3 from "../imgs/carousel/Overview2.png";
+
+import A1 from "../imgs/carousel/our approach3.png";
+import A2 from "../imgs/carousel/our approach2.png";
+import A3 from "../imgs/carousel/The approach.png";
+
+import C1 from "../imgs/carousel/Core values2.png";
+import C2 from "../imgs/carousel/Core values.png";
+import C3 from "../imgs/carousel/Core values3.png";
+ 
 const AboutPage = () => {
   const tabs = [
-    {
-      title: "OverView",
-      content:
-        "AKS Partners (formerly known as A.K. Singh & Co) is a law firm based in New Delhi (India) that provides a comprehensive range of legal services and solutions to domestic and international clients. With over 30 years of experience across diverse industry segments and practice areas, AKS Partners combines the breadth of its knowledge with departmental depth to provide clients with a multidisciplinary approach that addresses all aspects of their needs.",
-      imgs: <ImageGrid />,
-    },
-    {
-      title: "The Approach",
-      content:
-        "AKS Partners believes in working closely with its clients, providing them with strategic counsel through every twist and turn of a transaction. Professionalism, effectiveness and speed are core to the firm's work ethic and the legal advice rendered by the team is consistently high quality and commercially relevant.",
-      imgs: <ImageGrid />,
-    },
-    {
-      title: "Core Values",
-      content:
-        "Our team consists of experienced lawyers and legal professionals who bring deep industry knowledge and a collaborative approach to solving complex legal challenges.",
-      imgs: <ImageGrid />,
-    },
-  ];
+  {
+    title: "OverView",
+    content: "AKS Partners (formerly known as A.K. Singh & Co) is a law firm based in New Delhi (India) that provides a comprehensive range of legal services and solutions to domestic and international clients. With over 30 years of experience across diverse industry segments and practice areas, AKS Partners combines the breadth of its knowledge with departmental depth to provide clients with a multidisciplinary approach that addresses all aspects of their needs.",
+    images: [O1, O2, O3],
+  },
+  {
+    title: "The Approach",
+    content: "AKS Partners believes in working closely with its clients, providing them with strategic counsel through every twist and turn of a transaction. Professionalism, effectiveness and speed are core to the firm's work ethic and the legal advice rendered by the team is consistently high quality and commercially relevant.",
+    images: [A1, A2, A3],
+  },
+  {
+    title: "Core Values",
+    content: "Our team consists of experienced lawyers and legal professionals who bring deep industry knowledge and a collaborative approach to solving complex legal challenges.",
+    images: [C1, C2, C3],
+  },
+];
 
   const [activeTab, setActiveTab] = useState(0);
 
@@ -48,7 +59,7 @@ const AboutPage = () => {
           <div className="tab-content">
             <h2>{tabs[activeTab].title}</h2>
             <p>{tabs[activeTab].content}</p>
-            {tabs[activeTab].imgs}
+           <ImageGrid images={tabs[activeTab].images} />
           </div>
         </div>
       </div>
@@ -236,4 +247,4 @@ export default AboutPage;
 // //   );
 // // };
 
-// // export default AboutPage;
+// // export default AboutPage;  isme h kiya prob,e h 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Img from "../imgs/carousel/img-1.jpg";
 import HeroImg from "../Materials/Hero/HeroImg";
 import Img1 from "../imgs/clients/1.png";
-import ImgHero from "../imgs/carousel/img-2.jpg";
+import ImgHero from "../imgs/heroImgs/our-client-page.png";
 
 
  const clientImages = [];
