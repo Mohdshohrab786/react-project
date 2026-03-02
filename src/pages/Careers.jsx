@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Img2 from "../imgs/heroImgs/career-page.png";
+// import Img2 from "../imgs/heroImgs/career.png";
 import ImgCorporate from "../imgs/carousel/Corporate team.png";
 import ImgEngineer from "../imgs/carousel/Engineering.png";
 import ImgIntern from "../imgs/carousel/Intern.png";

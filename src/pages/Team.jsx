@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import ImgHero from "../imgs/heroImgs/out-team.png";
+// import ImgHero from "../imgs/heroImgs/out-team.png";
 import HeroImg from "../Materials/Hero/HeroImg";
+
+import ImgHero from "../imgs/heroImgs/TeamHero.jpeg";
+
 import Img from "../imgs/team/att-1.webp";
 
 const teamMembers = [
