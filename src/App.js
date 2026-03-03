@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./Components2/Navbar/Navbar";
 import HeroSection from "./Components2/Hero/Hero";
@@ -14,6 +14,7 @@ import Footer1 from "./Components2/footer-1/footer-1";
 import Disclaimer from "./Components/Disclaimer";
 import { motion, AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Expertise from "./pages/Expertise";
 import Careers from "./pages/Careers";
@@ -22,6 +23,7 @@ import Team from "./pages/Team";
 import AboutPage from "./pages/About";
 import NotableDeals from "./pages/NotableDeals";
 import AwardsRecog from "./pages/AwardsRecog";
+
 import Litigation from "./pages/Inner-PractisePages/litigation";
 import Arbitration from "./pages/Inner-PractisePages/arbitration";
 import GeneralCorporateAndCommercial from "./pages/Inner-PractisePages/general-corporate-and-commercial";
@@ -40,6 +42,7 @@ import SecretarialCompliance from "./pages/Inner-PractisePages/secretarial-compl
 import CompetitionPractice from "./pages/Inner-PractisePages/competition-practice";
 import CorporateRegulatoryCompliance from "./pages/Inner-PractisePages/corporate-regulatory-compliance";
 import InfrastructureAndEnergy from "./pages/Inner-PractisePages/infrastructure-and-energy";
+
 import CareerPage from "./pages/Careers";
 import TeamDetail1 from "./pages/team-1";
 import TeamDetail2 from "./pages/team-2";
@@ -48,53 +51,34 @@ import TeamDetail4 from "./pages/team-4";
 import TeamDetail5 from "./pages/team-5";
 import TeamDetail6 from "./pages/team-6";
 import TeamDetail7 from "./pages/team-7";
+
 import ApplicationForm from "./pages/ApplicationForm";
 import Clients from "./pages/Clients";
 import Sitemap from "./pages/FooterSiteMap";
-// import ScrollToTop from "./pages/ScrollToTop";
+import Cookies from "./pages/Cookies";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
-// import Footer from "../Components/Footer";
-// import Footer1 from "../Components2/footer-1/footer-1";
+import TermsOfUse from "./pages/TermsOfUse";
+
 
 function App() {
-    // const [agreed, setAgreed] = useState(false);
-
-
-    // Check localStorage when app loads
-
-
-    // const handleAgree = () => {
-    //   setAgreed(true);
-    // };
-
     const [agreed, setAgreed] = useState(false);
 
     const handleAgree = () => {
-        setAgreed(true); // user clicked agree
+        setAgreed(true);
     };
 
     return ( <
-        >
-        <
-        Router > {
-            /* {!agreed ? (
-                    <Disclaimer onAgree={() => setAgreed(true)} />
-                  ) : ( */
-        }
+        Router > {!agreed && < Disclaimer onAgree = { handleAgree }
+            />}
 
-        {
-            !agreed && < Disclaimer onAgree = { handleAgree }
-            />} <
-            >
             <
             Navbar / >
 
-
-                <
-                Routes >
-
-                <
-                Route path = "/"
+            <
+            Routes >
+            <
+            Route path = "/"
             element = { < Home / > }
             /> <
             Route path = "/Expertise"
@@ -174,7 +158,9 @@ function App() {
             /> <
             Route path = "/infrastructure-and-energy"
             element = { < InfrastructureAndEnergy / > }
-            /> <
+            />
+
+            <
             Route path = "/Sonal-Kumar-Singh"
             element = { < TeamDetail1 / > }
             /> <
@@ -195,22 +181,43 @@ function App() {
             /> <
             Route path = "/Ekansh-Gupta"
             element = { < TeamDetail7 / > }
-            /> <
+            />
+
+            <
             Route path = "/Careers"
             element = { < CareerPage / > }
             /> <
             Route path = "/apply/:role"
             element = { < ApplicationForm / > }
-            /> { /* footer */ } <
+            /> <
             Route path = "/sitemap"
             element = { < Sitemap / > }
-            /> 
+            />
 
             <
-            /Routes> <
-            Footer / > < /> { /* // )} */ } <
-                /Router> <
-                />
+            Route path = "/cookies"
+            element = { < Cookies / > }
+            />
+
+            <
+            Route path = "/privacy-policy"
+            element = { < PrivacyPolicy / > }
+            /> 
+
+
+
+            <
+            Route path = "/terms-of-use"
+            element = { < TermsOfUse / > }
+            />
+
+            <
+            /Routes>
+
+            <
+            Footer / >
+            <
+            /Router>
         );
     }
 

@@ -83,10 +83,10 @@ const Footer = () => {
             </div>
             <div className="col-md-7 col-lg-5 col-xl-5 footer-3-links">
               <Link to="/sitemap"> Sitemap</Link> |
-              <a href="#"> Cookies</a> |
+              <a href="/cookies"> Cookies</a> |
 
-              <a href="#">Privacy Policy</a> |
-              <a href="#">Terms of use</a>
+              <a href="/privacy-policy">Privacy Policy</a> |
+              <a href="/terms-of-use">Terms of use</a>
             </div>
           </div>
         </div>
