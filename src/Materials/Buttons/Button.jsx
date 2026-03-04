@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Link2 = ({ color, link }) => {
   return (
     <>
-    <Link to="/Awards">
+    <Link to="/About">
     <div className={`learn-more-btn ${color}`}>
       <span className="arrow">
         <FontAwesomeIcon icon={faChevronRight} />

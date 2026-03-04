@@ -1,12 +1,12 @@
 // src/components/ImageGrid.js
 import React from "react";
 import "./img-grid.css";
-import Img1 from "../../imgs/carousel/Home page about us1.png";
-import Img2 from "../../imgs/carousel/Home page about us2.png";
-import Img3 from "../../imgs/carousel/Home page about us3.png";
+import Img1 from "../../imgs/carousel/2.png";
+import Img2 from "../../imgs/carousel/1.png";
+import Img3 from "../../imgs/carousel/Overview.png";
 
 const ImageGrid1 = () => {
-  return (
+  return ( 
     <section className="aks-image-grid">
       <div className="left-grid">
         <div className="grid-item">

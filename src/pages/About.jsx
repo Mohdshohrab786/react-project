@@ -11,8 +11,8 @@ import O2 from "../imgs/carousel/Overview3.png";
 import O3 from "../imgs/carousel/Overview2.png";
 
 import A1 from "../imgs/carousel/our approach3.png";
-import A2 from "../imgs/carousel/our approach2.png";
-import A3 from "../imgs/carousel/The approach.png";
+import A2 from "../imgs/carousel/our approach22.png";
+import A3 from "../imgs/carousel/The approach 33.png";
 
 import C1 from "../imgs/carousel/Core values2.png";
 import C2 from "../imgs/carousel/Core values.png";
